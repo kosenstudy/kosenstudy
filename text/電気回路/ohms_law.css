@@ -23,7 +23,7 @@ body{
 }
 .container{
     display: -webkit-flex;
-    display: flex3
+    display: flex3;
     background-color: rgb(166, 218, 231);
     padding-top: 20px;
 }
