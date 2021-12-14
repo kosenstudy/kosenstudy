@@ -38,6 +38,8 @@ body{
 
 /*記事部分　画像*/
 .picture{
+  width: 90%;
+  height: 40%;
   
 }
 
