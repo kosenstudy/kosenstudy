@@ -26,6 +26,7 @@ body{
     display: flex3;
     background-color: rgb(166, 218, 231);
     padding-top: 20px;
+    min-height: 1000px;
 }
 
 /*記事部分*/
@@ -35,9 +36,25 @@ body{
     margin-right: 20px;
 }
 
+.article img{
+    width: 300px;
+}
 
 p1{
+  font-size: 7mm;
+  line-height: 7mm;
+}
+p2{
+  font-size: 5mm;
+}
+p3{
+  font-size: 12mm;
+  font-style: oblique;
+  color: rgb(211, 9, 9);
+}
 
+p4{
+  font-size: 8mm;
 }
 /*サイドバー*/
 
