@@ -26,6 +26,7 @@ body{
     display: flex;
     background-color: rgb(166, 218, 231);
     padding-top: 20px;
+    padding-bottom: 50px;
   
 }
 
@@ -34,30 +35,38 @@ body{
     display: block;
     width: 90%;
     margin-right: 20px;
-    
-
 }
-
-
-/*記事部分 文字*/
 
 p1{
-  color: rgb(201, 44, 16);
-  font-size: 150%;
-  font-weight: bold;
+  font-size: 7mm;
+  line-height: 7mm;
 }
 
-
-
-
-
-/*記事部分　画像*/
-.picture img{
-  width: 369px; 
+h1{
+  font-size: 10mm;
 }
 
+.back{
+  float:left;
+}
 
-
+.next{
+  float:right;
+}
+/*お知らせの記事部分*/
+.news{
+    margin-right: 5%;
+    margin-bottom: 50px;
+    width: 90%;
+    height: 300px;
+    overflow: auto;
+    border:rgb(40, 40, 40) 2px solid;
+    background-color: ghostwhite;
+}
+/*フィードバックの記事部分*/
+.feedback{
+  margin-top: 10px;
+}
 
 /*サイドバー*/
 
@@ -172,7 +181,7 @@ p1{
 }
 
 .highlight{
-  background-color: aqua;
+    background-color: aqua;
 }
 
 .dropLabel:hover, .dropInput:checked + label {

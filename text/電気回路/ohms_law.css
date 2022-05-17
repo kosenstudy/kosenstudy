@@ -168,6 +168,10 @@ p4{
   color:ghostwhite;
 }
 
+.highlight{
+  background-color: aqua;
+}
+
 .dropLabel:hover, .dropInput:checked + label {
   background: #008B8B;
   color: ghostwhite;
