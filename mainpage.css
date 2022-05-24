@@ -35,16 +35,52 @@ body{
     display: block;
     width: 90%;
     margin-right: 20px;
+    min-height: 100vh;
+}
+
+
+.picture_kiru img{
+  width: 369px; 
+  padding: 8px;
+  background-color: rgb(141, 224, 247);
+}
+
+.picture_ohms img{
+  width: 300px;
+  padding: 8px;
+  background-color: rgb(141, 224, 247);
+}
+
+
+.back{
+  float:left;
+}
+
+.next{
+  float:right;
 }
 
 p1{
   font-size: 7mm;
   line-height: 7mm;
 }
+p2{
+  font-size: 5mm;
+}
+p3{
+  font-size: 12mm;
+  font-style: oblique;
+  color: rgb(211, 9, 9);
+}
+
+p4{
+  font-size: 8mm;
+}
 
 h1{
   font-size: 10mm;
 }
+
 /*お知らせの記事部分*/
 .news{
     margin-right: 5%;
