@@ -2,7 +2,7 @@
 @charset "UTF-8";
 /*bodyの部分*/
 body{
-    margin: 0px;
+  margin:0px;
 }
 
 .wrap{
@@ -21,6 +21,13 @@ body{
   background-color: rgb(40, 40, 40);
   
 }
+
+.obi2{
+  height: 3px;
+  background-color: rgb(40, 40, 40);
+  margin-bottom: 8mm;
+}
+
 .container{
     display: -webkit-flex;
     display: flex;
@@ -38,19 +45,54 @@ body{
     min-height: 100vh;
 }
 
-
+/*キルヒホフ画像*/
 .picture_kiru img{
   width: 369px; 
   padding: 8px;
   background-color: rgb(141, 224, 247);
 }
 
+/*オーム画像*/
 .picture_ohms img{
   width: 300px;
   padding: 8px;
   background-color: rgb(141, 224, 247);
 }
 
+.picture_denkikairo img{
+  width: 400px;
+  padding: 8px;
+  margin: 20px;
+  background-color: rgb(141, 224, 247);
+}
+
+/*目次部分*/
+.index{
+  font-size: 24px;
+  background-color: rgb(234, 250, 255);
+  margin-bottom:4mm;
+  padding: 8px;
+}
+
+.mondaibun{
+  font-size: 24px;
+  padding: 8px;
+  background-color: rgb(234, 250, 255);
+  margin-bottom:16mm;
+
+}
+
+.kaitou{
+  font-size: 20px;
+  margin-bottom:16mm;
+
+}
+
+.kousiki{
+  font-size: 22px;
+  font-weight: 700;
+  color: rgb(224, 70, 70);
+}
 
 .back{
   float:left;
@@ -65,7 +107,7 @@ p1{
   line-height: 7mm;
 }
 p2{
-  font-size: 5mm;
+  font-size: 6mm;
 }
 p3{
   font-size: 12mm;
@@ -75,6 +117,10 @@ p3{
 
 p4{
   font-size: 8mm;
+}
+
+p5{
+  font-size: 30px;
 }
 
 h1{
@@ -208,6 +254,9 @@ h1{
   color:ghostwhite;
 }
 
+.highlight{
+  background-color: aqua;
+}
 .dropLabel:hover, .dropInput:checked + label {
   background: #008B8B;
   color: ghostwhite;
@@ -225,4 +274,7 @@ footer{
     bottom: 0;
 }
 
-
+/*位置調整*/
+.center{
+  text-align: center;
+}

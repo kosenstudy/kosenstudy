@@ -74,15 +74,199 @@
                 <main class="article">
 
                     <h1>電気回路テスト対策</h1>
-
-                    <div class="mondaibun">
-                        1,以下の正弦波交流起電力の瞬時値が
-
+                    <div class="index">
+                        <p5>＜目次＞</p5>
+                        <br>
+                        <a href="#number1">問1</a>（瞬時値計算）
+                        <a href="#number2">問2</a>（位相差）
+                        <a href="#number3">問3</a>（Y結線）
+                        <a href="#number4">問4</a>（Y-Y回路）
+                        <a href="#number5">問5</a>（Δ-Δ回路)
+                    </div>
                     
+                    <div class="obi2">
+                        <!--仕切り線-->
                     </div>
 
 
+                    <!--問１-->
+                    <div class="mondaibun">
+                        <a id="number1"></a>問１</a>：以下の正弦波交流起電力の瞬時値が-60.0[V]となるのは正弦波交流起電力がゼロである瞬間から何秒後になるか。ただし、周波数f=55.0[Hz]とする。
+                        <br>
+                        
+                        \begin{align}
+                        e=120\sin{(2\pi{}ft)}[V]
+                        \end{align}
+                    
+                    </div>
 
+                    <div class="kaitou">
+                        <p2>【解答】</p2>
+                        <br>瞬時値が-60.0[V]になる時なので、e=-60.0,f=55.0を代入する。
+                        <br>
+
+                        \begin{align}
+                        -60&=120\sin{(110\pi{}t)}
+                        \\
+                        -\frac{1}{2}&=\sin{(110\pi{}t)}
+                        \end{align}
+
+                        \(\sin{\theta{}}=-\frac{1}{2}\) となる \(\theta{}\) は、\(\theta{}=\frac{7}{6}\pi{}\) なので、
+
+                        \begin{align}
+                        110\pi{}t&=\frac{7}{6}\pi{}
+                        \\
+                        t&=\frac{7}{6}\pi{}×\frac{1}{110\pi{}}
+                        \\
+                        &=\frac{7}{660}=10.6[ms]
+                        \end{align}
+
+                    </div>
+
+                    <!--問２-->
+                    <div class="mondaibun">
+                        <a id="number2"></a>問２</a>：以下の正弦波交流電圧に対する電流の位相差を求めよ。
+                        \begin{align}
+                        &v=V_{m}\sin{\left(\omega{}t-\frac{\pi{}}{4}\right)}[V]&
+                        &i=I_{m}\sin{\left(\omega{}t-\frac{\pi{}}{3}\right)}[A]&
+                        \end{align}
+                    </div>
+
+                    <div class="kaitou">
+                        <p2>【解答】</p2>
+                        <br>電圧に対する電流の位相差なので、"\(vの位相-iの位相\)"で求めることが出来る。
+                        <br>
+
+                        \begin{align}
+                        &\frac{\pi{}}{2}-\frac{\pi{}}{3}=\frac{\pi{}}{6}&
+                        &\theta{}=\frac{\pi{}}{6}&
+
+                        \end{align}
+                    </div>
+
+                    <!--問３-->
+                    <div class="mondaibun">
+                        <a id="number3"></a>問３</a>：図１のY結線された対象電源において、線間電圧の大きさが\(200\sqrt{3}[V]\)、線電流の大きさが\(100\sqrt{3}[A]\)の時の相電圧\(\dot{E}_{a}\)と相電流\(\dot{I}_{a}\)の大きさを求めよ。
+
+                        <div class="picture_denkikairo center">
+                            <img src="../image/denkikairo/denkikairo-1.png">
+                        </div>
+
+                    </div>
+
+                    <div class="kaitou">
+                        <p2>【解答】</p2>
+                        <br>Y結線では、
+                        <div class="kousiki">
+                            \begin{align}
+                            線間電圧&=\sqrt{3}×線電圧
+                            \\
+                            線電流&=線電流
+                            \end{align}
+                        </div>
+                        の関係が成り立つので、この公式に当てはめて解いていくと線間電圧は、
+
+                        \begin{align}
+                            200\sqrt{3}&=\sqrt{3}×|\dot{E}_{a}| 
+                            \\
+                            |\dot{E}_{a}|&=200\sqrt{3}×\frac{1}{\sqrt{3}}=200[V]                      
+                        \end{align}
+
+                        相電流は、
+
+                        \begin{align}
+                        |\dot{I}_{a}|=100\sqrt{3}[A]
+                        \end{align}
+
+
+                    </div>
+
+
+                    <!--問４-->
+                    
+                    <div class="mondaibun">
+                        <a id="number4"></a>問４</a>：次の図２の平衡三相回路(Y-Y回路)について以下の設問に答えよ。
+
+                        <div class="picture_denkikairo center">
+                            <img src="../image/denkikairo/denkikairo-2.png">
+                        </div>
+                        
+                        (1) 相電圧\(\dot{E}_{a}\)の大きさが\(100[V]\)、インピーダンスが\(\dot{Z}=10+j10\sqrt{3}[\Omega{}]\)のとき、線電流\(\dot{I}_{a}\)の大きさを求めよ。
+                        <br>
+                        <br>
+                        (2) 相電圧と線電流の位相差\(\theta{}\)を求めよ。
+                        <br>
+                        <br>
+                        (3) 相電圧\(\dot{E}_{a}\)を基準としたときの線電流\(\dot{I}_{a},\dot{I}_{b},\dot{I}_{c}\)を求めよ。ただし、極座標形式で表すこと。
+                        
+                    </div>
+
+                    <div class="kaitou">
+                        <p2>【解答】</p2>
+                        <br>(1) オームの法則より、\(\dot{I}=\frac{\dot{E}}{\dot{Z}}\)に代入して、
+                        \begin{align}
+                            \dot{I}_{a}=\frac{100}{10+j10\sqrt{3}}&=\frac{100}{10+j10\sqrt{3}}×\frac{10-j10\sqrt{3}}{10-j10\sqrt{3}}
+                            \\
+                            \\
+                            &=2.5-j4.33
+                        \end{align}
+
+                        電流の大きさは、
+                        <div class="kousiki">
+                            \begin{align}
+                            \dot{I}=a+jb[A]のとき、|\dot{I}|=\sqrt{a^{2}+b^{2}} 
+                            \end{align}
+                        </div>
+                        で表されるので、
+                        \begin{align}
+                            |\dot{I}_{a}|=\sqrt{2.5^{2}+(-4.33)^{2}}\fallingdotseq5[A]
+                        \end{align}
+                        <br>
+                        <br>
+                        (2)相電圧と線電流の位相差は、
+                        <div class="kousiki">
+                            \begin{align}
+                            \dot{Z}=a+jb[\Omega]のとき、\theta=\tan^{-1}\frac{b}{a}
+                            \end{align}
+                        </div>
+                        で表されるので、
+                        \begin{align}
+                        \theta=\tan^{-1}\frac{10\sqrt{3}}{10}=\frac{\pi}{3}[rad]
+                        \end{align}
+                        また、ベクトル図は以下のようになる。
+                        <div class="picture_denkikairo center">
+                            <img src="../image/denkikairo/denkikairo-3.png">
+                        </div>
+                        <br>
+                        <br>
+                        (3)直交座標から極座標への変換公式は、
+                        <div class="kousiki">
+                            \begin{align}
+                            直交座標(a,b)のとき、極座標は、\sqrt{a^{2}+b^{2}}\angle\tan^{-1}\frac{b}{a}
+                            \end{align}
+                        </div>
+                        で表せる。
+                        <br>
+                        <br>
+                        \(\dot{I}_{a}=2.5-j4.33\) より、直交座標は \((2.5,-4.33)\) と表されるので、極座標に変換すると、
+                        \begin{align}
+                        \dot{I}_{a}=\sqrt{2.5^2+(-4.33)^{2}}\angle\tan^{-1}\frac{-4.33}{2.5}=5\angle-\frac{\pi}{3}
+                        \end{align}
+                    </div>
+
+                    <!--問５-->
+
+                    <div class="mondaibun">
+                        <a id="number5"></a>問５</a>：次の図３の平衡三相回路（Δ-Δ回路）について以下の問題に答えよ。
+                        <div class="picture_denkikairo center">
+                            <img src="../image/denkikairo/denkikairo-4.png">
+                        </div>
+
+                        (1)相電圧\(\dot{E}_{ab}\)の大きさを120[V]、インピーダンスを\(\dot{Z}=20\sqrt{3}+j20[\Omega]\)として、相電圧\(dot{E}_{ab}\)を基準としたときの、
+                        
+
+
+                    </div>
 
 
 
