@@ -91,7 +91,7 @@
 
                     <!--問１-->
                     <div class="mondaibun">
-                        <a id="number1"></a>問１</a>：以下の正弦波交流起電力の瞬時値が-60.0[V]となるのは正弦波交流起電力がゼロである瞬間から何秒後になるか。ただし、周波数f=55.0[Hz]とする。
+                        <a id="number1"></a>問１</a>：以下の正弦波交流起電力の瞬時値が\(-60.0[V]\)となるのは正弦波交流起電力がゼロである瞬間から何秒後になるか。ただし、周波数\(f=55.0[Hz]\)とする。
                         <br>
                         
                         \begin{align}
@@ -100,9 +100,9 @@
                     
                     </div>
 
-                    <div class="kaitou">
-                        <p2>【解答】</p2>
-                        <br>瞬時値が-60.0[V]になる時なので、e=-60.0,f=55.0を代入する。
+                    <details class="kaitou">
+                        <summary>【解答】</summary>
+                        <br>瞬時値が\(-60.0[V]\)になる時なので、\(e=-60.0,f=55.0\)を代入する。
                         <br>
 
                         \begin{align}
@@ -121,7 +121,7 @@
                         &=\frac{7}{660}=10.6[ms]
                         \end{align}
 
-                    </div>
+                    </details>
 
                     <!--問２-->
                     <div class="mondaibun">
@@ -132,8 +132,8 @@
                         \end{align}
                     </div>
 
-                    <div class="kaitou">
-                        <p2>【解答】</p2>
+                    <details class="kaitou">
+                        <summary>【解答】</summary>
                         <br>電圧に対する電流の位相差なので、"\(vの位相-iの位相\)"で求めることが出来る。
                         <br>
 
@@ -142,7 +142,7 @@
                         &\theta{}=\frac{\pi{}}{6}&
 
                         \end{align}
-                    </div>
+                    </details>
 
                     <!--問３-->
                     <div class="mondaibun">
@@ -154,14 +154,14 @@
 
                     </div>
 
-                    <div class="kaitou">
-                        <p2>【解答】</p2>
+                    <details class="kaitou">
+                        <summary>【解答】</summary>
                         <br>Y結線では、
                         <div class="kousiki">
                             \begin{align}
-                            線間電圧&=\sqrt{3}×線電圧
+                            線間電圧&=\sqrt{3}\angle\frac{\pi}{6}×線電圧
                             \\
-                            線電流&=線電流
+                            線電流&=相電流
                             \end{align}
                         </div>
                         の関係が成り立つので、この公式に当てはめて解いていくと線間電圧は、
@@ -179,7 +179,7 @@
                         \end{align}
 
 
-                    </div>
+                    </details>
 
 
                     <!--問４-->
@@ -201,14 +201,14 @@
                         
                     </div>
 
-                    <div class="kaitou">
-                        <p2>【解答】</p2>
+                    <details class="kaitou">
+                        <summary>【解答】</summary>
                         <br>(1) オームの法則より、\(\dot{I}=\frac{\dot{E}}{\dot{Z}}\)に代入して、
                         \begin{align}
                             \dot{I}_{a}=\frac{100}{10+j10\sqrt{3}}&=\frac{100}{10+j10\sqrt{3}}×\frac{10-j10\sqrt{3}}{10-j10\sqrt{3}}
                             \\
                             \\
-                            &=2.5-j4.33
+                            &=2.5-j4.33[A]
                         \end{align}
 
                         電流の大きさは、
@@ -252,7 +252,7 @@
                         \begin{align}
                         \dot{I}_{a}=\sqrt{2.5^2+(-4.33)^{2}}\angle\tan^{-1}\frac{-4.33}{2.5}=5\angle-\frac{\pi}{3}
                         \end{align}
-                    </div>
+                    </details>
 
                     <!--問５-->
 
@@ -262,11 +262,91 @@
                             <img src="../image/denkikairo/denkikairo-4.png">
                         </div>
 
-                        (1)相電圧\(\dot{E}_{ab}\)の大きさを120[V]、インピーダンスを\(\dot{Z}=20\sqrt{3}+j20[\Omega]\)として、相電圧\(dot{E}_{ab}\)を基準としたときの、
-                        
+                        (1)相電圧\(\dot{E}_{ab}\)の大きさを\(120[V]\)、インピーダンスを\(\dot{Z}=20\sqrt{3}+j20[\Omega]\)として、相電圧\(\dot{E}_{ab}\)を基準としたときの、
+                        相電流\(\dot{I}_{ab},\dot{I}_{bc},\dot{I}_{ca}\)を求めよ。ただし、極座標形式で表すこと。
+                        <br>
+                        <br>
+                        (2)相電圧\(\dot{E}_{ab}\)を基準としたときの線電流\(\dot{I}_{a},\dot{I}_{b},\dot{I}_{c}\)を求めよ。
 
 
                     </div>
+
+                    <details class="kaitou">
+                        <summary>【解答】</summary>
+                        <br>(1)\(\dot{I}_{ab}=\frac{\dot{E}_{ab}}{\dot{Z}}\)より、それぞれの値を代入して、
+                        
+                        \begin{align}
+                        \dot{I}_{ab}=\frac{120}{20\sqrt{3}+j20}=2.6-j1.5[A]
+                        \end{align}
+
+                        極座標変換すると、
+                        
+                        \begin{align}
+                        |\dot{I}_{ab}|&=\sqrt{2.6^{2}+(-1.5)^{2}}=3[A]
+                        \\
+                        \\
+                        \theta&=\tan^{-1}{\frac{-1.5}{2.6}}=-\frac{\pi}{6}[rad]
+                        \end{align}
+                        
+                        より、
+
+                        \begin{align}
+                        \dot{I}_{ab}=3\angle-\frac{\pi}{6}[A]
+                        \end{align}
+
+                        また、\(\dot{I}_{bc},\dot{I}_{ca}\)は、それぞれ\(\frac{2\pi}{3}\)ずつ位相をずらせば良いので、
+
+                        \begin{align}
+                        \dot{I}_{bc}=3\angle-\frac{5\pi}{6}[A]
+                        \\
+                        \dot{I}_{ca}=3\angle-\frac{3\pi}{2}[A]
+                        \end{align}
+
+                        また、ベクトル図は以下のようになる。
+
+                        <div class="picture_denkikairo center">
+                            <img src="../image/denkikairo/denkikairo-5.png">
+                        </div>
+
+
+                        <br>
+                        <br>
+
+                        (2)Δ結線では、
+
+                        <div class="kousiki">
+                            \begin{align}
+                            線電流&=\sqrt{3}\angle-\frac{\pi}{6}×相電流
+                            \\
+                            線間電圧&=相電圧
+                            \end{align}
+                        </div>
+
+                        の関係が成り立つので、
+                        \begin{align}
+                        \dot{I}_{a}=\sqrt{3}\angle-\frac{\pi}{6}×\dot{I}_{ab}&=\sqrt{3}\angle-\frac{\pi}{6}×3\angle-\frac{\pi}{6}
+                        \\
+                        &=3\sqrt{3}\angle-\frac{\pi}{3}[A]
+                        \end{align}
+                        
+                        \(\dot{I}_{b},\dot{I}_{c}\)も同様に、
+                        
+                        
+                        \begin{align}
+                        \dot{I}_{b}&=3\sqrt{3}\angle-\pi[A]
+                        \\
+                        \dot{I}_{c}&=3\sqrt{3}\angle-\frac{5\pi}{3}[A]
+                        \end{align}
+
+                        また、ベクトル図は以下のようになる。
+                        
+                        <div class="picture_denkikairo center">
+                            <img src="../image/denkikairo/denkikairo-6.png">
+                        </div>
+
+                    </details>
+
+
 
 
 

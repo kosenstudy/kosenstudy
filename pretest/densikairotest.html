@@ -75,7 +75,122 @@
 
                     <h1>電子回路テスト対策</h1>
 
+                    <!--目次-->
+                    <div class="index">
+                        <p5>＜目次＞</p5>
+                        <br>
+                        <a href="#number1">問1</a>（反転増幅回路）
+                        <a href="#number2">問2</a>
+                        <a href="#number3">問3</a>
+                        <a href="#number4">問4</a>
+                        <a href="#number5">問5</a>
+                    </div>
 
+                    <div class="obi2">
+                        <!--仕切り線-->
+                    </div>
+
+                    <!--問1-->
+                    <div class = "mondaibun">
+                        <a id="number1">問１</a>：図１の回路について以下の問いに答えよ。
+
+                        <div class="picture_densikairo center">
+                            <img src="../image/densikairo/densikairo-1.png">
+                        </div>
+
+                        (1)点aについてキルヒホッフの電流測の方程式を立てよ。
+                        <br>
+                        <br>
+                        (2)(1)の方程式をオームの法則より電圧の式に変形せよ。
+                        <br>
+                        <br>
+                        (3)\(V_{o}\)を導出せよ。
+
+
+                    </div>
+
+                    <details class="kaitou">
+                        <summary>【解答】</summary>
+                        <br>
+                        (1)キルヒホフの電流測は、
+                        <div class="kousiki">
+                            <br>
+                            点に流れ込む電流=点から流れ出る電流
+                            
+                        </div>
+
+                        <br>
+                        より、
+                        \begin{align}
+                        I_{1}&=I_{2}-I_{i}
+                        \\
+                        I_{1}-I_{2}+I_{i}&=0
+                        \end{align}
+
+                        (2)オームの法則より（電流の向きに注意）、
+                        \begin{align}
+                        &I_{1}=\frac{V_{i}-V_{-}}{R_{1}}&
+                        &I_{2}=\frac{V_{-}-V_{o}}{R_{2}}&
+                        \end{align}
+                        
+                        また、
+                        <br>
+                        <br>
+                        <div class = "kousiki">
+                            理想オペアンプの特性
+                            <li>入力インピーダンスが無限大（\(Z_{i}=\infty\)）</li>
+                            <li>出力インピーダンスがゼロ（\(Z_{o}=0\)）</li>
+                            <li>電圧増幅率が無限大（\(A=/infty\)）</li>
+                        </div>
+                        <br>
+                        より、入力インピーダンスダンスが無限大なので、
+                        \begin{align}
+                        I_{i}=0
+                        \end{align}
+                        
+                        これらを(1)で導出した式に当てはめて、
+                        
+                        \begin{align}
+                        \frac{V_{i}-V_{-}}{R_{1}}-\frac{V_{-}-V_{o}}{R_{2}}+0=0
+                        \end{align}
+
+                        (3)オペアンプでは、
+                        <br>
+                        <br>
+                        <div class="kousiki">
+                            プラス入力端子とマイナス入力端子の電圧差がゼロに近く、仮想的にショートしている状態(バーチャルショート)
+                            が起こるので、
+                            \begin{align}
+                            V_{+}=V_{-}
+                            \end{align}
+                            の関係が成立する。
+                        </div>
+                        <br>
+
+                        そのため、\(V_{+}=0[V]\)より、
+                        
+                        \begin{align}
+                        V_{+}=V_{-}=0[V]
+                        \end{align}
+
+                        これを(2)で求めた式に代入すると、
+
+                        \begin{align}
+                        \frac{V_{i}}{R_{1}}+\frac{V_{o}}{R_{2}}&=0
+                        \\
+                        \\
+                        \frac{V_{o}}{R_{2}}&=-\frac{V_{i}}{R_{1}}
+                        \\
+                        \\
+                        V_{o}&=-\frac{R_{2}}{R_{1}}V_{i}
+                        \end{align}
+
+                    </details>
+
+                    <!--問2-->
+                    <div class="mondaibun">
+                        
+                    </div>
 
 
 

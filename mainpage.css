@@ -3,23 +3,30 @@
 /*bodyの部分*/
 body{
   margin:0px;
+  
 }
 
 .wrap{
     position: relative;
     box-sizing: border-box;
+  
 
+
+    
 }
 
 /*ヘッダー部分*/
+
+
 .page-header{
     height: 80px;
+
 }
     
 .obi{
   height: 5px;
   background-color: rgb(40, 40, 40);
-  
+
 }
 
 .obi2{
@@ -29,20 +36,21 @@ body{
 }
 
 .container{
-    display: -webkit-flex;
+
     display: flex;
     background-color: rgb(166, 218, 231);
     padding-top: 20px;
     padding-bottom: 50px;
+    min-height: 100vh;
   
 }
 
 /*記事部分*/
 .article{
-    display: block;
-    width: 90%;
-    margin-right: 20px;
-    min-height: 100vh;
+
+  margin-right: 20px;
+  flex-grow: 1;
+  max-width: auto;
 }
 
 /*キルヒホフ画像*/
@@ -66,12 +74,24 @@ body{
   background-color: rgb(141, 224, 247);
 }
 
+.picture_densikairo img{
+  width: 400px;
+  padding: 8px;
+  margin: 20px;
+  background-color: rgb(141, 224, 247);
+}
+
+
+
 /*目次部分*/
 .index{
   font-size: 24px;
+  border-radius: 4px;
   background-color: rgb(234, 250, 255);
   margin-bottom:4mm;
   padding: 8px;
+  margin-right: 4px;
+
 }
 
 .mondaibun{
@@ -79,12 +99,15 @@ body{
   padding: 8px;
   background-color: rgb(234, 250, 255);
   margin-bottom:16mm;
+  border-radius: 4px;
+  margin-right: 4px;
 
 }
 
 .kaitou{
   font-size: 20px;
   margin-bottom:16mm;
+  margin-right: 4px;
 
 }
 
@@ -92,6 +115,7 @@ body{
   font-size: 22px;
   font-weight: 700;
   color: rgb(224, 70, 70);
+  
 }
 
 .back{
@@ -131,7 +155,7 @@ h1{
 .news{
     margin-right: 5%;
     margin-bottom: 50px;
-    width: 90%;
+
     height: 300px;
     overflow: auto;
     border:rgb(40, 40, 40) 2px solid;
@@ -168,7 +192,7 @@ h1{
 /*サイドバー　時計部分ここまで*/
   
 .sidebar{
-    width:320px;
+    width:360px;
     margin-right: 20px;
     margin-left: 20px;
 }
@@ -189,6 +213,7 @@ h1{
     margin-bottom: 0;
     top: 10px;
 }
+
 /*追従サイドバー”カテゴリー”部分*/
 .sub-title{
   text-align: center;
@@ -277,4 +302,26 @@ footer{
 /*位置調整*/
 .center{
   text-align: center;
+}
+
+details {
+  /*border: 1px solid #aaa;*/
+  border-radius: 4px;
+  padding: .5em .5em 0;
+  background-color: rgb(234, 250, 255);
+}
+
+summary {
+  font-weight: bold;
+  margin: -.5em -.5em 0;
+  padding: .5em;
+}
+
+details[open] {
+  padding: .5em;
+}
+
+details[open] summary {
+  /*border-bottom: 1px solid #aaa;*/
+  margin-bottom: .5em;
 }
